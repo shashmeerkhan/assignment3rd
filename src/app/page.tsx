@@ -4,6 +4,7 @@ import pic1 from "../app/pictures/pic1.png";
 export default function Home() {
   return (
     <div className="parent">
+      
       <div className="myname">
         <h1>
           Hi, <br />I am <span className="myspan">Shahmeer Khan</span>

@@ -1,47 +1,43 @@
-export default function Contact() {
-    return (
-      <div className="mycontact">
-        <h1>Contact Us</h1>
-        <p>
-          We  love to hear from you! Whether you have a question, want to
-          collaborate on a project, or just want to say hello, feel free to reach
-          out to us.
-        </p>
-  
-        <h2>Get in Touch</h2>
-        <p>
-          Email: <a href="mailto:kshahmeer10@gmail.com">kshahmeer10@gmail.com</a>
-          <br />
-          Phone: +923481341392
-        </p>
-  
-        <h2>Location</h2>
-        <p>
-          Our office is located at:Karachi
-          <br />
-        </p>
-  
-        <h2>Working Hours</h2>
-        <p>
-          Monday -  Saturday: 8:00 AM - 12:00 AM
-          <br />
-          Sunday: open
-        </p>
-  
-        <h2>Social Media</h2>
-        <p>
-          Connect with us on social media:
-          <br />
-          <a href="https://www.facebook.com/kshahmeer10" target="_blank">
-            Facebook
-          </a>{" "}
-
-          |{" "}
-          <a href="https://www.linkedin.com/in/shahmeer-khan-96b1a42b4/" target="_blank">
-            LinkedIn
-          </a>
-        </p>
-      </div>
-    );
-  }
-  
+// components/ContactSection.js
+export default function ContactSection() {
+  return (
+    <section className="contact text-center py-6 bg-gray-100 shadow-md">
+      <h2 className="text-2xl font-semibold text-[var(--maincolor)]">Contact Me</h2>
+      <p className="text-gray-600 leading-relaxed mb-4">
+        Feel free to reach out for collaborations or just a friendly hello!
+      </p>
+      <form className="max-w-md mx-auto">
+        <div className="mb-4">
+          <label className="block text-left text-gray-600 mb-1" htmlFor="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md"
+            placeholder="Your Name"
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-left text-gray-600 mb-1" htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md"
+            placeholder="Your Email"
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-left text-gray-600 mb-1" htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md"
+            rows="4"
+            placeholder="Your Message"
+          ></textarea>
+        </div>
+        <button type="submit" className="px-4 py-2 bg-[var(--maincolor)] text-white rounded-md hover:bg-[var(--hovercolor)]">
+          Send Message
+        </button>
+      </form>
+    </section>
+  );
+}

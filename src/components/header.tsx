@@ -16,6 +16,10 @@ export default function Header() {
             {" "}
             <button className="menuLinks">About</button>
           </Link>
+          <Link href={"./projects"}>
+            {" "}
+            <button className="menuLinks">Projects</button>
+          </Link>
           <Link href={"./contact-us"}>
             {" "}
             <button className="menuLinks">Contact</button>
