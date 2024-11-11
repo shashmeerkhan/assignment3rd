@@ -30,7 +30,7 @@ export default function ContactSection() {
           <textarea
             id="message"
             className="w-full px-4 py-2 border border-gray-300 rounded-md"
-            rows="4"
+            
             placeholder="Your Message"
           ></textarea>
         </div>
