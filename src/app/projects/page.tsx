@@ -3,6 +3,7 @@ import Image, { StaticImageData } from 'next/image';
 import coun from '../pictures/counter.png';
 import blog from '../pictures/blog.png';
 import pro from '../pictures/pro.png';
+import cv from '../pictures/cv.png';
 
 type ProjectData = {
   title: string;
@@ -30,6 +31,12 @@ const projects: ProjectData[] = [
     image: pro,
     link: 'https://hackathon-sand-iota.vercel.app',
   },
+  {
+    title: 'Resume builder Website',
+    description: 'A Resume builder Website simply put your details get instant your CV.',
+    image: cv,
+    link: 'https://cvbykshahmeer10.vercel.app',
+  }
 ];
 
 export default function Projects() {
